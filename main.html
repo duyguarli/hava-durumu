@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu Uygulaması</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="still.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <h1 class="main-title">GÖKYÜZÜ REHBERİ</h1>
+
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="sehirInput" placeholder="Şehir ismi yazın...">
+                <button id="araButon">ARA</button>
+            </div>
+
+            <div class="weather-card" id="weatherResult" style="display: none;">
+                <h2 id="sehirAd"></h2>
+                <img id="havaIkon" src="" alt="Hava Durumu">
+                <h1 id="derece"></h1>
+                <p id="aciklama"></p>
+                
+                <div class="details">
+                    <div class="col">
+                        <p>Nem</p>
+                        <span id="nem"></span>%
+                    </div>
+                    <div class="col">
+                        <p>Rüzgar</p>
+                        <span id="ruzgar"></span> km/s
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

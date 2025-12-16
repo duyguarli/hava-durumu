@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 1s ease;
+}
+
+/* Kutu ve Başlığı içine alan ana sarıcı */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Her şeyi ortalar */
+}
+
+.main-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+    font-style: italic;
+    margin-left: 15px;
+    
+    /* Genişliği alttaki container ile aynı yapıyoruz */
+    width: 400px; 
+    
+    /* Harfleri kutunun iki ucuna yaslamak için sihirli dokunuş: */
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 35px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+    color: white;
+    width: 400px; /* Başlıkla aynı genişlik */
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    color: #333;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: none;
+    background: #ff8c00;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #e67e00;
+    transform: translateY(-2px);
+}
+
+#sehirAd {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#havaIkon {
+    width: 140px; /* Biraz büyüttük */
+    filter: drop-shadow(0 0 15px rgba(255,255,255,0.4));
+}
+
+#derece {
+    font-size: 5rem;
+    font-weight: 800;
+    margin: -10px 0;
+}
+
+#aciklama {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.col p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.col span {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
